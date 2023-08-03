@@ -30,7 +30,6 @@ const Models = () => {
         <Canvas 
           shadows 
           camera={{fov: 25, position: [2, 2, 8]}}
-          
         >
           <Suspense fallback={null}>
             <Scene />

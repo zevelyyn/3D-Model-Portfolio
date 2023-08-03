@@ -9,7 +9,7 @@ const NavBar = () => {
                 display='flex' 
                 justifyContent='center'
             >
-                <Logo src=''/>
+                {/* <Logo src=''/> */}
                 <motion.button
                     whileHover={{ scale: 1.2, floodColor: 'pink' }}
                     whileTap={{ scale: 0.9 }}
