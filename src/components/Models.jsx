@@ -3,6 +3,7 @@ import { OrbitControls } from '@react-three/drei'
 import { Canvas, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useSpring, animated, config } from '@react-spring/three'
+// import { EffectComposer, SSAO, Bloom } from "react-postprocessing"
 
 function Scene() {
     const gltf = useLoader(GLTFLoader, '../assets/birdie_3js.gltf')
@@ -29,14 +30,19 @@ const Models = () => {
       <div className='App'>
         <Canvas 
           shadows 
-          camera={{fov: 25, position: [2, 2, 8]}}
+          camera={{fov: 25, position: [-2, 2, 8]}}
         >
           <Suspense fallback={null}>
-            <Scene />
+            <Scene/>
             <OrbitControls autoRotate={false} enableZoom={false}/>
             <ambientLight intensity={.5} color={'peachpuff'}/>
-            <directionalLight position={[3, 2, 1]}/>
-            <hemisphereLight intensity={.7}/>
+            <directionalLight position={[3, 2, 1]} color={'gold'}/>
+            <directionalLight position={[-3, -2, -1]} color='honeydew'/>
+            <hemisphereLight intensity={1}/>
+            {/* <EffectComposer smaa>
+              <Bloom />
+              <SSAO />
+          </EffectComposer> */}
           </Suspense>         
         </Canvas>
       </div>

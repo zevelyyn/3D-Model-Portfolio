@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   /* background-color: #361a25; */
-  background-image: url('../assets/bg_beige.jpg');
+  background-image: url('../assets/bg_pink.jpg');
   background-position: center;
 
   font-synthesis: none;
@@ -45,17 +45,20 @@ button {
   font-size: 1.5em;
   font-weight: 500;
   font-family: inherit;
+  color: #000000;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 1em;
 }
 button:hover {
-  /* background-color: rgba(177, 120, 55, 0.267); */
-  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.267);
+  /* text-decoration: underline; */
+  border-color: rgb(223, 252, 242);
+  border-width: 2px;
 }
-/* button:focus, */
-/* button:focus-visible {
+/* button:focus,
+button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
 
