@@ -1,5 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: monospace;
   line-height: 1.5;
   font-weight: 400;
 
@@ -45,14 +46,14 @@ button {
   font-size: 1.5em;
   font-weight: 500;
   font-family: inherit;
-  color: #000000;
-  background-color: rgba(255, 255, 255, 0);
+  color: #d34f70;
+  background-color: rgba(255, 255, 255, .25);
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 1em;
 }
 button:hover {
-  background-color: rgba(255, 255, 255, 0.267);
+  background-color: rgba(255, 255, 255, 0.35);
   /* text-decoration: underline; */
   border-color: rgb(223, 252, 242);
   border-width: 2px;

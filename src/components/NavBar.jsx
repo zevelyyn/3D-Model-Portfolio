@@ -14,7 +14,7 @@ const NavBar = () => {
                 display='flex' 
                 justifyContent='center'
             >
-                <Logo src='../assets/sheep.png'/>
+                <Logo src='../assets/sheep-pink.png'/>
                 <motion.button
                     whileHover={{ 
                         scale: 1.2,

@@ -27,7 +27,7 @@ const App = () => {
   return (
     <Box height='90vh' margin='2'>
       <NavBar/>
-      <Container display='flex' alignItems='center' >
+      <Container display='flex' alignItems='center'>
         <Left>
           <Title1>3D Model</Title1>
           <Title2>Portfolio</Title2>

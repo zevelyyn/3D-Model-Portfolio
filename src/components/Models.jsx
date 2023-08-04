@@ -1,12 +1,30 @@
-import { React, Suspense, useState } from 'react'
+import { React, Suspense, useState, useRef } from 'react'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useSpring, animated, config } from '@react-spring/three'
+import {motion,
+  useScroll,
+  useTransform,
+  MotionValue
+} from "framer-motion"
 // import { EffectComposer, SSAO, Bloom } from "react-postprocessing"
 
+// function Func(id) {
+//   const ref = useRef(null)
+//   const { scrollYProgress } = useScroll({ target: ref})
+  
+//   const gltf = useLoader(GLTFLoader, `../assets/${id}.gltf`)
+
+//   return (
+//     <animated.scene>
+//       <primitive object={gltf.scene} />
+//     </animated.scene>
+//   )
+// }
+
 function Scene() {
-    const gltf = useLoader(GLTFLoader, '../assets/birdie_3js.gltf')
+    const gltf = useLoader(GLTFLoader, '../assets/1.gltf')
     const [active, setActive] = useState(false)
   
     const { scale } = useSpring({ 
@@ -34,6 +52,7 @@ const Models = () => {
         >
           <Suspense fallback={null}>
             <Scene/>
+            {/* {[1, 2].map(()=> (</>))} */}
             <OrbitControls autoRotate={false} enableZoom={false}/>
             <ambientLight intensity={.5} color={'peachpuff'}/>
             <directionalLight position={[3, 2, 1]} color={'gold'}/>
