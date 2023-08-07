@@ -10,18 +10,15 @@ import {motion,
 } from "framer-motion"
 // import { EffectComposer, SSAO, Bloom } from "react-postprocessing"
 
-// function Func(id) {
-//   const ref = useRef(null)
-//   const { scrollYProgress } = useScroll({ target: ref})
-  
-//   const gltf = useLoader(GLTFLoader, `../assets/${id}.gltf`)
+function Func(id) {
+  const gltf = useLoader(GLTFLoader, '../assets/${id}.gltf')
 
-//   return (
-//     <animated.scene>
-//       <primitive object={gltf.scene} />
-//     </animated.scene>
-//   )
-// }
+  return (
+    <animated.scene>
+        <primitive object={gltf.scene} />
+    </animated.scene>
+  ) 
+}
 
 function Scene() {
     const gltf = useLoader(GLTFLoader, '../assets/1.gltf')
@@ -52,7 +49,8 @@ const Models = () => {
         >
           <Suspense fallback={null}>
             <Scene/>
-            {/* {[1, 2].map(()=> (</>))} */}
+            {/* {[1, 2].map((x)=> (<Func id={x}/>))} */}
+            {/* <Func id={1}/> */}
             <OrbitControls autoRotate={false} enableZoom={false}/>
             <ambientLight intensity={.5} color={'peachpuff'}/>
             <directionalLight position={[3, 2, 1]} color={'gold'}/>
