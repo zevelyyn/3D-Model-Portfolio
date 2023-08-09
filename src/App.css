@@ -58,3 +58,18 @@
   align-items: center;
   padding-right: 0%;
 }
+
+ul {
+  /* display: flex; */
+  list-style: none;
+  height: 80vh;
+  width: 70vh;
+  overflow: auto;
+  padding: 20px 0;
+  flex: 0 0 600px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
