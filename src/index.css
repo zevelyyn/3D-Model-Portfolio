@@ -7,7 +7,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   /* background-color: #361a25; */
-  background-image: url('../assets/bg_pink.jpg');
+  background-image: url('./assets/bg_pink.jpg');
   background-position: center;
 
   font-synthesis: none;
