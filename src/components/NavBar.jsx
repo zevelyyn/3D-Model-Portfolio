@@ -1,6 +1,7 @@
 import { Container, Box, transition } from '@chakra-ui/react'
 import { motion } from "framer-motion"
 import styled from 'styled-components'
+import logo from '../assets/sheep-pink.png'
 
 const Logo = styled.img`
     height: 6em
@@ -12,9 +13,9 @@ const NavBar = () => {
             
             <Container 
                 display='flex' 
-                justifyContent='center'
+                justifyContent='right'
             >
-                <Logo src='../assets/sheep-pink.png'/>
+                <Logo src={logo}/>
                 <motion.button
                     whileHover={{ 
                         scale: 1.2,

@@ -1,6 +1,6 @@
 import { React } from 'react'
 import styled from 'styled-components'
-import { Container, Stack, Box } from '@chakra-ui/react'
+import { Container, Box } from '@chakra-ui/react'
 import './App.css'
 import Models from "./components/Models"
 import NavBar from "./components/NavBar"
@@ -25,21 +25,25 @@ const Title2 = styled.div`
 
 const App = () => {
   return (
-    <Box height='90vh' margin='2'>
-      <NavBar/>
+    
       <Container display='flex' alignItems='center'>
         <Left>
-          <Title1>3D Model</Title1>
-          <Title2>Portfolio</Title2>
-          <p className="subheading">
-            I'm Evelyn and this is my 3D model portfolio
-          </p> 
+          <Box height='90vh' margin='2'>
+            <NavBar/>
+            <Container paddingTop='20%' height='100%'>
+              <Title1>3D Model</Title1>
+              <Title2>Portfolio</Title2>
+              <p className="subheading">
+                I'm Evelyn and this is my 3D model portfolio
+              </p> 
+            </Container>
+          </Box>
         </Left>
         <div className='right'>
-          <Models />
+          {/* <Models /> */}
         </div>
       </Container>
-    </Box>
+    
   )
 }
 
