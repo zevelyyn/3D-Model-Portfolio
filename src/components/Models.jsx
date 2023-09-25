@@ -4,7 +4,7 @@ import { Canvas, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useSpring, animated, config } from '@react-spring/three'
 import styled from 'styled-components'
-// import { EffectComposer, SSAO, Bloom } from "react-postprocessing"
+// import { EffectComposer, SSAO, Bloom } from "@react-three/postprocessing"
 
 const Container = styled.div`
   height: 60vh;
@@ -20,7 +20,7 @@ const Column = styled.div`
 `
 
 function Func({ id }) {
-  const gltf = useLoader(GLTFLoader, `../assets/${id}.gltf`)
+  const gltf = useLoader(GLTFLoader, `src/assets/${id}.gltf`)
   const [active, setActive] = useState(false)
     
   const { scale } = useSpring({ 
@@ -46,7 +46,6 @@ function Scene({ num }) {
         camera={{fov: 25, position: [-2, 2, 8]}}
       >
         <Suspense fallback={null}>
-          {/* <Scene/> */}
           {/* {[1, 2].map((x)=> (<Func id={x}/>))} */}
           <Func id={num}/>
           <OrbitControls autoRotate={false} enableZoom={false}/>

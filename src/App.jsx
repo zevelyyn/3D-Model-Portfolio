@@ -40,7 +40,7 @@ const App = () => {
           </Box>
         </Left>
         <div className='right'>
-          {/* <Models /> */}
+          <Models />
         </div>
       </Container>
     

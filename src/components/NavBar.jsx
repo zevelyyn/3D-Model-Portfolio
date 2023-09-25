@@ -9,14 +9,16 @@ const Logo = styled.img`
 
 const NavBar = () => {
     return (
-        <Box width='100%' borderWidth='2px'>
+        <Box width='100%' height='10%' borderWidth='2px'>
             
             <Container 
                 display='flex' 
                 justifyContent='right'
+                // width="100%"
+                // height="100%"
             >
                 <Logo src={logo}/>
-                <motion.button
+                {/* <motion.button
                     whileHover={{ 
                         scale: 1.2,
                         transition: { duration: .2 }
@@ -29,8 +31,10 @@ const NavBar = () => {
                     transition={{ type: 'spring' }}
                 >
                     About
-                </motion.button>
-                <motion.button
+                </motion.button> */}
+                <button>About</button>
+                <button>Contact</button>
+                {/* <motion.button
                     whileHover={{ 
                         scale: 1.2,
                         transition: { duration: .2 }
@@ -43,7 +47,7 @@ const NavBar = () => {
                     transition={{ type: 'tween' }}
                 >
                     Contact
-                </motion.button>
+                </motion.button> */}
             </Container>
         </Box>
     )
