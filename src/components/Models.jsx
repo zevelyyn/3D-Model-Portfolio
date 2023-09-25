@@ -20,7 +20,7 @@ const Column = styled.div`
 `
 
 function Func({ id }) {
-  const gltf = useLoader(GLTFLoader, `src/assets/${id}.gltf`)
+  const gltf = useLoader(GLTFLoader, `../src/assets/${id}.gltf`)
   const [active, setActive] = useState(false)
     
   const { scale } = useSpring({ 

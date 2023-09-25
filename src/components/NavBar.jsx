@@ -9,7 +9,7 @@ const Logo = styled.img`
 
 const NavBar = () => {
     return (
-        <Box width='100%' height='10%' borderWidth='2px'>
+        <Box width='100%' borderWidth='2px' paddingBottom='5%'>
             
             <Container 
                 display='flex' 
