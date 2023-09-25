@@ -3645,9 +3645,9 @@ No matching component was found for:
 `,o7=Kl.div`
   height: 60vh;
   width: 20vh;
-`;function a7({id:t}){const e=sw(dW,`src/assets/${t}.gltf`),[n,i]=xe.useState(!1);return e7({scale:n?1.1:1,config:K3.wobbly}),Dt.jsx(s7.scene,{children:Dt.jsx("primitive",{object:e.scene})})}function JR({num:t}){return Dt.jsx(aW,{shadows:!0,camera:{fov:25,position:[-2,2,8]},children:Dt.jsxs(xe.Suspense,{fallback:null,children:[Dt.jsx(a7,{id:t}),Dt.jsx(fW,{autoRotate:!1,enableZoom:!1}),Dt.jsx("ambientLight",{intensity:.5,color:"peachpuff"}),Dt.jsx("directionalLight",{position:[3,2,1],color:"gold"}),Dt.jsx("directionalLight",{position:[-3,-2,-1],color:"honeydew"}),Dt.jsx("hemisphereLight",{intensity:1})]})})}const l7=()=>Dt.jsx(o7,{children:Dt.jsxs("ul",{children:[Dt.jsxs(QR,{children:[Dt.jsx(JR,{num:"1"})," "]}),Dt.jsxs(QR,{children:[Dt.jsx(JR,{num:"2"})," "]})]})}),u7="/3D-Model-Portfolio/assets/sheep-pink-95f43f87.png",c7=Kl.img`
+`;function a7({id:t}){const e=sw(dW,`../src/assets/${t}.gltf`),[n,i]=xe.useState(!1);return e7({scale:n?1.1:1,config:K3.wobbly}),Dt.jsx(s7.scene,{children:Dt.jsx("primitive",{object:e.scene})})}function JR({num:t}){return Dt.jsx(aW,{shadows:!0,camera:{fov:25,position:[-2,2,8]},children:Dt.jsxs(xe.Suspense,{fallback:null,children:[Dt.jsx(a7,{id:t}),Dt.jsx(fW,{autoRotate:!1,enableZoom:!1}),Dt.jsx("ambientLight",{intensity:.5,color:"peachpuff"}),Dt.jsx("directionalLight",{position:[3,2,1],color:"gold"}),Dt.jsx("directionalLight",{position:[-3,-2,-1],color:"honeydew"}),Dt.jsx("hemisphereLight",{intensity:1})]})})}const l7=()=>Dt.jsx(o7,{children:Dt.jsxs("ul",{children:[Dt.jsxs(QR,{children:[Dt.jsx(JR,{num:"1"})," "]}),Dt.jsxs(QR,{children:[Dt.jsx(JR,{num:"2"})," "]})]})}),u7="/3D-Model-Portfolio/assets/sheep-pink-95f43f87.png",c7=Kl.img`
     height: 6em
-`,f7=()=>Dt.jsx(k0,{width:"100%",height:"10%",borderWidth:"2px",children:Dt.jsxs(qg,{display:"flex",justifyContent:"right",children:[Dt.jsx(c7,{src:u7}),Dt.jsx("button",{children:"About"}),Dt.jsx("button",{children:"Contact"})]})}),d7=Kl.div`
+`,f7=()=>Dt.jsx(k0,{width:"100%",borderWidth:"2px",paddingBottom:"5%",children:Dt.jsxs(qg,{display:"flex",justifyContent:"right",children:[Dt.jsx(c7,{src:u7}),Dt.jsx("button",{children:"About"}),Dt.jsx("button",{children:"Contact"})]})}),d7=Kl.div`
   flex: 1;
   align-items: center;
   width: 40vw;
@@ -3660,4 +3660,4 @@ No matching component was found for:
 `,p7=Kl.div`
   font-size: 60px;
   text-align: right;
-`,m7=()=>Dt.jsxs(qg,{display:"flex",alignItems:"center",children:[Dt.jsx(d7,{children:Dt.jsxs(k0,{height:"90vh",margin:"2",children:[Dt.jsx(f7,{}),Dt.jsxs(qg,{paddingTop:"20%",height:"100%",children:[Dt.jsx(h7,{children:"3D Model"}),Dt.jsx(p7,{children:"Portfolio"}),Dt.jsx("p",{className:"subheading",children:"I'm Evelyn and this is my 3D model portfolio"})]})]})}),Dt.jsx("div",{className:"right",children:Dt.jsx(l7,{})})]});Z_.createRoot(document.getElementById("root")).render(Dt.jsx(Ao.StrictMode,{children:Dt.jsx(m7,{})}));
+`,m7=()=>Dt.jsxs(qg,{display:"flex",alignItems:"center",overflow:"hidden",children:[Dt.jsx(d7,{children:Dt.jsxs(k0,{height:"100%",margin:"2",children:[Dt.jsx(f7,{}),Dt.jsxs(qg,{children:[Dt.jsx(h7,{children:"3D Model"}),Dt.jsx(p7,{children:"Portfolio"}),Dt.jsx("p",{className:"subheading",children:"I'm Evelyn and this is my 3D model portfolio"})]})]})}),Dt.jsx("div",{className:"right",children:Dt.jsx(l7,{})})]});Z_.createRoot(document.getElementById("root")).render(Dt.jsx(Ao.StrictMode,{children:Dt.jsx(m7,{})}));
