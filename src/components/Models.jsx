@@ -4,6 +4,8 @@ import { Canvas, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import { useSpring, animated, config } from '@react-spring/three'
 import styled from 'styled-components'
+import model1 from '../assets/1.gltf'
+import model2 from '../assets/2.gltf'
 // import { EffectComposer, SSAO, Bloom } from "@react-three/postprocessing"
 
 const Container = styled.div`
@@ -20,7 +22,8 @@ const Column = styled.div`
 `
 
 function Func({ id }) {
-  const gltf = useLoader(GLTFLoader, `../src/assets/${id}.gltf`)
+  // const gltf = useLoader(GLTFLoader, `../src/assets/${id}.gltf`)
+  const gltf = useLoader(GLTFLoader, id)
   const [active, setActive] = useState(false)
     
   const { scale } = useSpring({ 
@@ -47,7 +50,9 @@ function Scene({ num }) {
       >
         <Suspense fallback={null}>
           {/* {[1, 2].map((x)=> (<Func id={x}/>))} */}
-          <Func id={num}/>
+          {/* <Func id={num}/> */}
+          <Func id={model1}/>
+          <Func id={model2}/>
           <OrbitControls autoRotate={false} enableZoom={false}/>
           <ambientLight intensity={.5} color={'peachpuff'}/>
           <directionalLight position={[3, 2, 1]} color={'gold'}/>
